@@ -1,0 +1,111 @@
+
+
+              <section>
+                <div class="container-fluid">
+                  <div class="row" style="justify-content: center;">
+                    <div class="col-lg-8 col-12">
+                      <form class="boxshadoww bottomborder topborder" style="border-radius: 10px; padding: 5%;">
+                        <div class="row mb-4">
+                          <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <input mdbInput type="text" id="RegistrationId" [(ngModel)]="userDetail.RegistrationId" name="RegistrationId" class="form-control" />
+                              <label mdbLabel class="form-label" for="RegistrationId">Registration ID</label>
+                            </mdb-form-control>
+                          </div>
+                          <!-- <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <input mdbInput type="text" id="RoleId" [(ngModel)]="userDetail.RoleId" name="RoleId" class="form-control" />
+                              <label mdbLabel class="form-label" for="RoleId">RoleID</label>
+                            </mdb-form-control>
+                          </div> -->
+                          <!-- <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <input mdbInput type="text" id="ProfileTagLine" [(ngModel)]="userDetail.ProfileTagLine" name="ProfileTagLine" class="form-control" />
+                              <label mdbLabel class="form-label" for="ProfileTagLine">Profile Tagline</label>
+                            </mdb-form-control>
+                          </div> -->
+                        </div>
+                         
+                        <!-- <input type="checkbox" id="endUserCheckbox" name="endUserCheckbox">
+                        <label for="endUserCheckbox">End User</label>
+
+                        <input type="checkbox" id="vendorCheckbox" name="vendorCheckbox">
+                        <label for="vendorCheckbox">Vendor</label> -->
+                   
+                        <!-- <label>
+                          <input type="radio"> 
+                          <li *ngFor="let role of roles">{{ role }}</li>
+                        </label> -->
+                        <div *ngFor="let role of userDetailsList">
+                          <input type="checkbox" name="role" [value]="role">
+                          <label>{{role.Title}}</label>
+                        </div>
+
+                        <!-- <div class="row mb-4">
+                          <div class="col">
+                            <mdb-form-control class="mb-4">
+                              <input type="file" class="form-control" id="customFile" name="Photo" [(ngModel)]="userDetail.Photo" (change)="fileChangeEvent($event)" accept="image/png, image/jpeg" />
+                            </mdb-form-control>
+                          </div>
+                          <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <input mdbInput type="date" id="BirthDate" [(ngModel)]="userDetail.BirthDate" name="BirthDate" class="form-control" />
+                              <label mdbLabel class="form-label" for="BirthDate">Birth Date</label>
+                            </mdb-form-control>
+                          </div> -->
+                          <!-- <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <input mdbInput type="text" id="Status" [(ngModel)]="userDetail.Status" name="Status" class="form-control" />
+                              <label mdbLabel class="form-label" for="Status">Status</label>
+                            </mdb-form-control>
+                          </div> -->
+                       
+                        <!-- <div class="col">
+                          
+                          <label for="CountryId">Country</label>
+                          <select id="CountryId" [(ngModel)]="userDetail.CountryId" name="CountryId" class="form-control">
+                            <option *ngFor="let option of filteredCountryOptions"[title]="option.name" [value]="option.name"(click)="filterCountry(option.id)">{{option.name}}</option>
+                          </select>
+                        </div> -->
+                        
+                        <!-- <div class="col">
+                          <label for="StateId">State</label>
+                          <select id="StateId" [(ngModel)]="userDetail.StateId" name="StateId" class="form-control">
+                            <option *ngFor="let option of filteredStateOptions" [title]="option.name"[value]="option.name"(click)="filterState(option.id)">{{option.name}}</option>
+                          </select> 
+                        </div> -->
+                        
+                        <!-- <div class="col">
+                          <label for="CityId">City</label>
+                          <select id="CityId" [(ngModel)]="userDetail.CityId" name="CityId" class="form-control">
+                            <option *ngFor="let option of filteredCityOptions" [title]="option.name"[value]="option.name"(click)="filterCity()">{{option.name}}</option>
+                          </select>
+                        </div>
+                        <br>
+                        &nbsp;
+                        <div class="row mb-4">
+                          <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <input mdbInput type="text" id="ContactNo" [(ngModel)]="userDetail.ContactNo" name="ContactNo" class="form-control" />
+                              <label mdbLabel class="form-label" for="ContactNo">Contact Number</label>
+                            </mdb-form-control>
+                          </div> -->
+                          <!-- <div class="col">
+                            <mdb-form-control class="form-outline mb-4">
+                              <textarea mdbInput class="form-control" id="Address" [(ngModel)]="userDetail.Address" name="Address" rows="4"></textarea>
+                              <label mdbLabel class="form-label" for="Address">Address</label>
+                            </mdb-form-control>
+                          </div>
+                        </div> -->
+                        <button mdbRipple (click)="OnSubmit();" type="button" class="btn btn-primary btn-block mb-4">
+                          Submit
+                        </button>
+                        <!-- <button mdbRipple (click)="OnApplyJob();" type="button" class="btn btn-primary btn-block mb-4">
+                          Apply Job
+                        </button> -->
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>

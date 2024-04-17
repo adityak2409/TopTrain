@@ -1,0 +1,158 @@
+<!-- <section>
+    <div class="container-fluid">
+        <div class="row" style="    justify-content: center;">
+         
+            <div class="col-lg-5 col-12 text-center"> -->
+              
+    
+               
+  
+  <!-- <div class="row justify-content-center  mt-7">
+      <div class="col-lg-5 text-center"> -->
+        <!-- <a href="index.html">
+          <img src="assets/img/svg/logo.svg" alt="">
+        </a> -->
+        <!-- <div class="card " style="     padding: 5%;">
+          <div class="card-body boxshadoww bottomborder topborder py-5 px-lg-5">
+            <div class="svg-icon svg-icon-xl text-purple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ionicons-v5-g</title><path d="M336,208V113a80,80,0,0,0-160,0v95" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path><rect x="96" y="208" width="320" height="272" rx="48" ry="48" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></rect></svg>
+            </div>
+            <h3 class="fw-normal text-dark mt-4">
+              2-step verification
+            </h3>
+            <p class="mt-4 mb-1">
+              We sent a verification code to your email.
+            </p>
+          
+              
+            <div class="row mt-4 pt-2">
+              <div class="col">
+                <input type="text" class="form-control form-control-lg text-center py-4" [(ngModel)]="otp1"maxlength="1" #input1 (input)="moveToNext(input1, input2)">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg text-center py-4" [(ngModel)]="otp2" maxlength="1"#input2 (input)="moveToNext(input2, input3)">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg text-center py-4" [(ngModel)]="otp3" maxlength="1"#input3 (input)="moveToNext(input3, input4)">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg text-center py-4"[(ngModel)]="otp4" maxlength="1"#input4 (input)="moveToNext(input4, input5)">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg text-center py-4"  [(ngModel)]="otp5"maxlength="1"#input5 (input)="moveToNext(input5, input6)">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control form-control-lg text-center py-4" [(ngModel)]="otp6" maxlength="1" #input6>
+              </div>
+            </div>
+  
+            <a (click)="OnSubmit1()" class="btn btn-purple btn-lg w-100 hover-lift-light mt-4">
+              Verify my account
+            </a>
+          </div>
+        </div>
+  
+        <p class="text-center text-muted mt-4">
+          Didn't receive it?
+          <a href="#!" class="text-decoration-none ms-2">
+            Resend code 
+          </a>
+        </p> -->
+      <!-- </div>
+    </div> -->
+    <!-- </div>
+    </div>
+    </div>
+    </section>
+  
+   -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container" >
+    <div class="row" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left-section">
+              <!-- Content for the left section goes here -->
+              <img src="../assets/verification.png" class="left-image">
+  
+            </div>
+          </div>
+  
+          <div class="col-lg-6">
+            <div class="right-section">
+              <!-- Content for the right section goes here -->
+  
+              <div class="container">
+                <h2>Verification</h2>
+                <form action="#" method="POST">
+  
+  
+                  <br>
+                  <br>
+  
+  
+                  <div class="info">
+                    We Will send you a one time OTP on
+                    this Email ID</div>
+                  <br>
+  
+  
+                  <div class="mail">
+                    <label for=" p**********@gmail.com"> p**********@gmail.com</label>
+                  </div>
+                  <br>
+                </form>
+  
+                <div class="circle-input-container" style="    margin-left: 30px;">
+                  <input type="text" [(ngModel)]="otp1"maxlength="1" #input1 (input)="moveToNext(input1, input2)"class="circle-input" maxlength="1">
+                  <input type="text" [(ngModel)]="otp2" maxlength="1"#input2 (input)="moveToNext(input2, input3)" class="circle-input" maxlength="1">
+                  <input type="text"  [(ngModel)]="otp3" maxlength="1"#input3 (input)="moveToNext(input3, input4)" class="circle-input" maxlength="1">
+                  <input type="text" [(ngModel)]="otp4" maxlength="1"#input4 (input)="moveToNext(input4, input5)" class="circle-input" maxlength="1">
+                 
+                  <input type="text" [(ngModel)]="otp5"maxlength="1"#input5 (input)="moveToNext(input5, input6)"class="circle-input" maxlength="1">
+                  <input type="text" [(ngModel)]="otp6" maxlength="1" #input6 class="circle-input" maxlength="1">
+                </div>
+  
+  
+                <br>
+                <br>
+                <a href="#!" class="text-decoration-none ms-2" class="resend" style="    margin-top: -20px;">
+                  <p>Resend OTP</p>
+                </a>
+  
+                <div class="button">
+                  <!-- <button>Register</button> -->
+                  <p><a (click)="OnSubmit1()" class="btn btn-primary">Submit</a></p>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

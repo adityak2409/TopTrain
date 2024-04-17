@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>SocialMedia Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>SocialMedia Form</h2>
+    <form>
+
+      <!-- SocialMediaId
+      <div class="form-group row">
+        <label for="SocialMediaId" class="col-sm-2 col-form-label">SocialMediaId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="SocialMediaId" placeholder="Enter SocialMediaId ">
+        </div>
+      </div> -->
+
+
+       <!-- RegistrationId -->
+       <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="socialMedia.RegistrationId" #registrationId="ngModel" name="RegistrationId"  placeholder="Enter RegistrationId">
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="form-group row">
+        <label for="Facebook" class="col-sm-2 col-form-label">Facebook</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Facebook" [(ngModel)]="socialMedia.Facebook" #facebook="ngModel" name="Facebook"  placeholder="Enter Facebook">
+        </div>
+      </div>
+   
+      <br>
+      <!-- Instagram -->
+      <div class="form-group row">
+        <label for="Instagram" class="col-sm-2 col-form-label">Instagram</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="Instagram" [(ngModel)]="socialMedia.Instagram" #instagram="ngModel" name="Instagram"rows="3" placeholder="Enter Instagram"></textarea>
+        </div>
+      </div>
+      
+      <br>
+      <!-- LinkedIn -->
+      <div class="form-group row">
+        <label for="LinkedIn" class="col-sm-2 col-form-label">LinkedIn</label>
+        <div class="col-sm-10">
+          <input type="LinkedIn" class="form-control" id="LinkedIn"[(ngModel)]="socialMedia.LinkedIn" #linkedIn="ngModel" name="LinkedIn" placeholder="Enter LinkedIn">
+        </div>
+      </div>
+   
+      <br>
+
+      <!-- Twitter -->
+      <div class="form-group row">
+        <label for="Twitter" class="col-sm-2 col-form-label">Twitter</label>
+        <div class="col-sm-10">
+          <input type="Twitter" class="form-control" id="Twitter"[(ngModel)]="socialMedia.Twitter" #twitter="ngModel" name="Twitter" placeholder="Enter Twitter">
+        </div>
+      </div>
+   
+      <br>
+
+     
+   
+      <br>
+      <!-- Status -->
+      <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="Status" class="form-control" id="Status"[(ngModel)]="socialMedia.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div>
+   
+      <br>
+      
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>
+ 

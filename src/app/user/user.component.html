@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .user-profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .user-profile .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .user-profile .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .user-profile .user-info span {
+            font-weight: bold;
+        }
+        .user-options {
+            display: flex;
+            align-items: center;
+        }
+        .user-options button {
+            margin-left: 10px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-profile">
+            <div class="user-info">
+                <img src="user-avatar.png" alt="User Avatar">
+                <span>User Name</span>
+            </div>
+            <div class="user-options">
+                <button id="vendorButton">Vendor User</button>
+                <button id="endUserButton">End User</button>
+                <!-- Add onclick event listeners to these buttons -->
+            </div>
+        </div>
+        <!-- Other content of the user profile page goes here -->
+    </div>
+
+    <script>
+        // JavaScript code to handle button clicks
+        document.getElementById('vendorButton').addEventListener('click', function() {
+            // Handle vendor user selection
+            alert('Vendor User selected');
+        });
+
+        document.getElementById('endUserButton').addEventListener('click', function() {
+            // Handle end user selection
+            alert('End User selected');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Achievement Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Achievement Form</h2>
+    <form> -->
+
+      <!-- AchievementId -->
+      <!-- <div class="form-group row">
+        <label for="AchievementId" class="col-sm-2 col-form-label">AchievementId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="AchievementId" [(ngModel)]="achievement.AchievementId" #achievementId="ngModel" name="AchievementId" placeholder="Enter AchievementId">
+        </div>
+      </div>
+   
+      <br> -->
+
+      <!-- RegistrationId -->
+      <!-- <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="achievement.RegistrationId" #registrationId="ngModel" name="RegistrationId" placeholder="Enter RegistrationId">
+        </div>
+      </div>
+   
+      <br> -->
+
+      <!-- Title -->
+      <!-- <div class="form-group row">
+        <label for="Title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Title" [(ngModel)]="achievement.Title" #title="ngModel" name="Title" placeholder="Enter Title">
+        </div>
+      </div>
+   
+      <br> -->
+
+      <!-- Description -->
+      <!-- <div class="form-group row">
+        <label for="Description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="Description" [(ngModel)]="achievement.Description" #description="ngModel" name="Description" placeholder="Enter Description"></textarea>
+        </div>
+      </div>
+   
+      <br> -->
+
+      <!-- CertificateId -->
+      <!-- <div class="form-group row">
+        <label for="CertificateId" class="col-sm-2 col-form-label">CertificateId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="CertificateId" [(ngModel)]="achievement.CertificateId" #certificateId="ngModel" name="CertificateId" placeholder="Enter CertificateId">
+        </div>
+      </div>
+   
+      <br> -->
+
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Status" [(ngModel)]="achievement.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div>
+   
+      <br>
+       -->
+      <!-- Submit Button -->
+      <!-- <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html> -->
+
+
+
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="mb-4">Achievement  Form</h2>
+            <form>
+
+               
+                    <div class="form-group" style="flex: 1;">
+                        <label for="RegistrationId">Registration ID</label>
+                        <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="achievement.RegistrationId" #RegistrationId="ngModel"placeholder="Enter Registration ID">
+                    </div>
+            
+                
+ 
+                <div class="form-group">
+                    <label for="Title">Title</label>
+                    <input type="text" class="form-control" id="Title" [(ngModel)]="achievement.Title" #Title="ngModel" placeholder="Enter Title">
+                </div>
+
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <textarea class="form-control" id="Description"  [(ngModel)]="achievement.Description" #Description="ngModel"placeholder="Enter Description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="CertificateId">Certificate ID</label>
+                    <input type="text" class="form-control" id="CertificateId" [(ngModel)]="achievement.CertificateId" #CertificateId="ngModel" placeholder="Enter Certificate ID">
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <button type="submit"  (click)="OnSubmit()"  class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

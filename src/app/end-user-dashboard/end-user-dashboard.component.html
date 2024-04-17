@@ -1,0 +1,51 @@
+<nav class="navbar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="toggleSidebar()">
+        <span class="navbar-toggle-icon">
+          <i class="fas fa-bars"></i> <!-- FontAwesome bars icon -->
+        </span>
+      </button>
+    </div>
+  </nav>
+  
+  <div class="sidebar" [ngClass]="{ 'active': sidebarOpen }">
+    <div class="sidebar-header">
+      <h3>User Dashboard</h3>
+      <button type="button" class="close-sidebar" (click)="toggleSidebar()">
+        <i class="fas fa-times"></i> <!-- FontAwesome times icon -->
+      </button>
+    </div>
+    <ul class="list-unstyled components">
+        <li>
+          <a (click)="OnProfile()">profile</a> 
+          </li>
+
+      
+      <li>
+        
+        <a href="app-end-user-job-list">Apply Job</a>
+      </li>
+      <li>
+        
+        <a href="add-enrollment">Apply Course</a>
+      </li>
+      <li>
+        
+        <a  href="app-applied-job-list">Applied Job</a>
+      </li>
+      <li>
+        <a  href="app-applied-course-list">Applied Course</a>
+       
+      </li>
+      <li>
+        <a  href="add-reviews">Review</a>
+       
+      </li>
+
+    </ul>
+  </div>
+  
+  <div class="content">
+    <!-- Your content here -->
+  </div>
+  

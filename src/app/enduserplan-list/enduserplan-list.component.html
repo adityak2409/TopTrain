@@ -1,0 +1,60 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">EndUserPlanList</h4>
+                        <p class="card-category"> View here all EndUserPlanList table record</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary" style="background-color: #ea48441c;">
+                                    <th>EndUserPlanId </th>
+                                    <th>Title </th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                    <th>Photo</th>
+                                    <th>Status</th>
+                                  
+                                    <!-- <th>Categorized </th> -->
+                                    <!-- <th>PostBy </th> -->
+                                    <th>Image</th>
+                                    <th>Action </th>
+                                        
+                                   
+                              
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of EndUserPlanList">
+                                        <td>{{i.EndUserPlanId}}</td>
+                                        <td>{{i.Title}}</td>
+                                        <td>{{i.Description}}</td>
+                                        <td>{{i.Price}}</td>
+                                        <td>{{i.Photo}}</td>  
+                                        <td>{{i.Status}}</td>
+                                        
+                                        <!-- <td> <img src="{{imgPath}}Content/Blog/{{i.Photo}}" style="height: 80px;width: 80px;"></td> -->
+                                        <!-- <td>{{i.Categorized}}</td>
+                                        <td>{{i.PostBy}}</td> -->
+                                        <!-- <td>{{i.Sectiontwo}}</td> -->
+                                        <td> <img src="{{imgPath}}Content/EndUserPlan/{{i.Photo}}" style="height: 80px;width: 80px;"></td>
+                                        <td><i class="fa fa-pencil-square iconaction"(click)="Edit(i.EndUserPlanId)"  aria-hidden="true"></i>
+                                            &nbsp;   <i class="fa fa-eye iconaction" (click)="View(i.EndUserPlanId)" aria-hidden="true"></i>
+                                             &nbsp; <i class="fa fa-trash iconaction"(click)="Delete(i.EndUserPlanId)" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>    
+                                                           
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+  </div>
+  

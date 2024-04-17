@@ -1,0 +1,148 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head> -->
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <!-- <title>Applicant Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Applicant Form</h2>
+    <form> -->
+
+      <!-- ApplicantId
+      <div class="form-group row">
+        <label for="ApplicantId" class="col-sm-2 col-form-label">ApplicantId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="ApplicantId" placeholder="Enter ApplicantId ">
+        </div>
+      </div> -->
+
+
+      
+
+      <!-- RegistrationId -->
+      <!-- <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="applicant.RegistrationId" #registrationId="ngModel" name="RegistrationId"  placeholder="Enter RegistrationId">
+        </div>
+      </div>
+   
+      <br> -->
+
+      <!-- JobId -->
+      <!-- <div class="form-group row">
+        <label for="JobId" class="col-sm-2 col-form-label">JobId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="JobId" [(ngModel)]="applicant.JobId" #jobId="ngModel" name="JobId"  placeholder="Enter JobId">
+        </div>
+      </div>
+   
+      <br> -->
+      <!-- CVId -->
+      <!-- <div class="form-group row">
+        <label for="CVId" class="col-sm-2 col-form-label">CVId</label>
+        <div class="col-sm-10">
+          <select [(ngModel)]="applicant.CV.CVId"class="form-control" name="CVId" #CVId="ngModel" placeholder="Enter CV Id" required>
+            <option *ngFor="let CV of CVList" [value]="CV.CVId">{{CV.CVPDF}}</option>
+          </select>
+        </div>
+      </div>
+   
+      <br> -->
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="Status" class="form-control" id="Status"[(ngModel)]="applicant.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div> -->
+   
+      <!-- <br>
+      
+
+      <br> -->
+      <!-- Submit Button -->
+      <!-- <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="mb-4">Applicant Form</h2>
+            <form>
+
+                <!-- <div class="form-group" style="flex: 1;">
+                    <label for="ApplicantId">Applicant ID</label>
+                    <input type="text" class="form-control" id="ApplicantId" [(ngModel)]="applicant.ApplicantId" #ApplicantId="ngModel" placeholder="Enter Applicant ID">
+                </div> -->
+
+                <div class="form-group">
+                    <label for="RegistrationId">Registration ID</label>
+                    <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="applicant.RegistrationId" #RegistrationId="ngModel" placeholder="Enter Registration ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="JobId">Job ID</label>
+                    <input type="text" class="form-control" id="JobId" [(ngModel)]="applicant.JobId" #JobId="ngModel" placeholder="Enter Job ID">
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="CVId">CV ID</label>
+                    <input type="text" class="form-control" id="CVId" [(ngModel)]="applicant.CVId" #CVId="ngModel" placeholder="Enter CV ID">
+                </div> -->
+
+
+                
+        <div class="form-group">
+          <label for="CVId">CV ID</label>
+          <select [(ngModel)]="applicant.CV.CVId"class="form-control" name="CVId" #CVId="ngModel" placeholder="Enter CV Id" required>
+            <option *ngFor="let CV of CVList" [value]="CV.CVId">{{CV.CVPDF}}</option>
+          </select>
+        </div>
+      <!-- </div> -->
+
+                <!-- <div class="form-group">
+                    <label for="Status">Status</label>
+                    <input type="text" class="form-control" id="Status" [(ngModel)]="applicant.Status" #Status="ngModel" placeholder="Enter Status">
+                </div> -->
+
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+[
+	{
+	  "state_id": "1",
+	  "cities": [
+		{ "id": "1", "name": "Satara" },
+		{ "id": "2", "name": "Pune" }
+	  ]
+	},
+	{
+	  "state_id": "2",
+	  "cities": [
+		{ "id": "3", "name": "Ahmedabad" },
+		{ "id": "4", "name": "Vadodara" }
+	  ]
+	},
+	{
+	  "state_id": "3",
+	  "cities": [
+		{ "id": "5", "name": "Kensington" },
+		{ "id": "6", "name": "North Melbourne" }
+	  ]
+	}
+  ]

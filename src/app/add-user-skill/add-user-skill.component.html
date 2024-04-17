@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>UserSkill Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>UserSkill Form</h2>
+    <form>
+
+      <!-- UserSkillId
+      <div class="form-group row">
+        <label for="UserSkillId" class="col-sm-2 col-form-label">UserSkillId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="UserSkillId" placeholder="Enter UserSkillId ">
+        </div>
+      </div> -->
+
+
+       <!-- IndustryId -->
+       <!-- <div class="form-group row">
+        <label for="IndustryId" class="col-sm-2 col-form-label">IndustryId</label>
+        <div class="col-sm-10">
+          <select [(ngModel)]="skills.Industry.IndustryId"class="form-control" name="IndustryId" #IndustryId="ngModel" placeholder="Enter IndustryId Id" required>
+            <option *ngFor="let Industry of IndustryList" [value]="Industry.IndustryId">{{Industry.Title}}</option>
+          </select>
+         
+        </div>
+      </div> -->
+
+       <!-- SkillId -->
+       
+
+      <div class="form-group row">
+        <label for="SkillId" class="col-sm-2 col-form-label">SkillId</label>
+        <div class="col-sm-10">
+          <select [(ngModel)]="userSkill.Skills.SKillsId"class="form-control" name="SkillId" #instructorId="ngModel" placeholder="Enter Skills Id" required>
+            <option *ngFor="let Skills of SkillsList" [value]="Skills.SkillId">{{Skills.Title}}</option>
+          </select>
+        </div>
+      </div>
+
+
+       <!-- RegistrationId -->
+       <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Certificate" [(ngModel)]="userSkill.RegistrationId" #title="ngModel" name="RegistrationId"  placeholder="Enter RegistrationId">
+         
+        </div>
+      </div>
+
+      <!-- Certificate -->
+      <div class="row">
+        <div class="col-md-6">
+           
+              <label for="avatar">Upload Certificate:: </label>
+              <input type="file" id="avatar" name="Photo"  [(ngModel)]="userSkill.Certificate"  (change)="fileChangeEvent($event)"accept="pdf" required>
+        </div>    
+          </div>
+      <br>
+      
+      
+      <br>
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="Status" class="form-control" id="Status"[(ngModel)]="userSkill.Status" #certificatestatus="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div> -->
+   
+      <br>
+      
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>
+ 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractive Job Cards</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom SCSS -->
+  <style>
+    /* Custom SCSS styles */
+    .job-card {
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .job-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4" *ngFor="let employer of EmployerList">
+        <div class="card job-card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ employer.RegistrationId }}</h5>
+            <p class="card-text">{{ employer.CompanyName}}</p>
+            <p class="card-text">{{ employer.Industry}}</p>
+            <p class="card-text">{{ employer.Contact}}</p>
+            <p class="card-text">{{ employer.Email}}</p>
+            <p class="card-text">{{ employer.Status}}</p>
+        
+            
+
+            
+            
+            <!-- <p class="card-text">{{ job.Description | description: 100 }}</p>
+            <button (click)="toggleDescription(job)" class="btn btn-link">{{ job.showMore ? 'Show Less' : 'Read More' }}</button>
+            <p class="card-text" *ngIf="job.showMore">{{ job.Description }}</p> -->
+            
+            
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

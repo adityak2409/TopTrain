@@ -1,0 +1,42 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Assign Role</h4>
+                        <p class="card-category"> View here all requests for Role table record</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary" style="background-color: #ea48441c;">
+                                    <th>UserRoleId </th>
+                                    <th>RegistrationId </th>
+                                    <th>RoleId </th>
+                                    <th>Status </th>  
+                                    <th>Accept</th>                              
+                                    <th>Action </th>             
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of mainUserRoleList">
+                                        <td>{{i.UserRoleId}}</td>
+                                        <td>{{i.RegistrationId}}</td>
+                                        <td>{{i.RoleId}}</td>
+                                        <td>{{i.Status}}</td>
+                                        <td><i class="fa fa-pencil-square iconaction"(click)="Accept(i.UserRoleId)"  aria-hidden="true"></i> </td>
+                                        
+                                           <td>   <i class="fa fa-trash iconaction"(click)="Delete(i.UserRoleId)" aria-hidden="true"></i></td>
+                                       
+                                    </tr>    
+                                                           
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Form</title>
+    
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Industry Form</h2>
+        <form id="industryForm">
+           
+
+            <div class="form-group">
+                <label for="Title">Title:</label>
+                <input type="text" id="Title" [(ngModel)]="industry.Title" #title="ngModel" name="Title" placeholder="Title" required>
+            </div>
+             <br>
+            <div class="form-group">
+                <label for="Description">Description:</label>
+                <input type="text" id="Description" [(ngModel)]="industry.Description" #description="ngModel" name="Description" placeholder="Description" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Status">Status:</label>
+                <select id="Status" [(ngModel)]="industry.Status" #status="ngModel"  name="Status" required>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit"(click)="OnSubmit()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Add your scripts here if needed -->
+
+</body>
+</html>

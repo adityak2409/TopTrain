@@ -1,0 +1,58 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">SKillsList</h4>
+                        <p class="card-category"> View here all SKillsList table record</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary" style="background-color: #ea48441c;">
+                                    <th>SKillsId </th>
+                                    <th>IndustryId </th>
+                                    <th>Title</th>
+                                    <th>Description</th>  
+                                    <th>CertificateStatus</th>
+                                  
+                                    <!-- <th>Categorized </th> -->
+                                    <!-- <th>PostBy </th> -->
+                                    <th>Action </th>
+                                        
+                                   
+                              
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of SKillsList">
+                                        <td>{{i.SKillsId}}</td>
+                                        <td>{{i.industry.IndustryId}}</td>
+                                        <td>{{i.Title}}</td>
+                                        <td>{{i.Description}}</td>
+                                         
+                                        <td>{{i.CertificateStatus}}</td>
+                                        
+                                        <!-- <td> <img src="{{imgPath}}Content/Blog/{{i.Photo}}" style="height: 80px;width: 80px;"></td> -->
+                                        <!-- <td>{{i.Categorized}}</td>
+                                        <td>{{i.PostBy}}</td> -->
+                                        <!-- <td>{{i.Sectiontwo}}</td> -->
+                                        <!-- <td> <img src="{{imgPath}}Content/Blog/{{i.Photo}}" style="height: 80px;width: 80px;"></td> -->
+                                        <td><i class="fa fa-pencil-square iconaction"(click)="Edit(i.SKillsId)"  aria-hidden="true"></i>
+                                            &nbsp;   <i class="fa fa-eye iconaction" (click)="View(i.SKillsId)" aria-hidden="true"></i>
+                                             &nbsp; <i class="fa fa-trash iconaction"(click)="Delete(i.SKillsId)" aria-hidden="true"></i>
+                                        </td>
+                                    </tr>    
+                                                           
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+  </div>
+  

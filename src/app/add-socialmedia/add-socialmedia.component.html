@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links</title>
+    <!-- Include Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for social media links */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .social-media-links {
+            display: flex;
+            justify-content: center; /* Align icons to the center */
+            position: absolute;
+            bottom: 20px; /* Adjust the distance from the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .social-link {
+            color: #000; /* Default color for icons */
+            display: inline-block;
+            padding: 15px; /* Adjust padding around icons */
+            margin: 0 10px; /* Adjust margin between icons */
+            border-radius: 50%; /* Make icons circular */
+            transition: color 0.3s; /* Smooth transition for color change */
+        }
+
+        .social-link:hover {
+            color: #3b5998; /* Change icon color on hover for Facebook */
+        }
+
+        .social-link.instagram:hover {
+            color: #e4405f; /* Change icon color on hover for Instagram */
+        }
+
+        .social-link.linkedin:hover {
+            color: #0077b5; /* Change icon color on hover for LinkedIn */
+        }
+
+        .social-link.twitter:hover {
+            color: #1da1f2; /* Change icon color on hover for Twitter */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your page content goes here -->
+
+    <!-- Social Media Links at the bottom -->
+    <div class="social-media-links">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/" target="_blank" class="social-link facebook">
+            <i class="fab fa-facebook fa-lg"></i> <!-- Adjust icon size -->
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" target="_blank" class="social-link instagram">
+            <i class="fab fa-instagram fa-lg"></i> <!-- Adjust icon size -->
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://ttps://www.linkedin.com/in/aditya-kadam-a0a378214/" target="_blank" class="social-link linkedin">
+            <i class="fab fa-linkedin fa-lg"></i> <!-- Adjust icon size -->
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/" target="_blank" class="social-link twitter">
+            <i class="fab fa-twitter fa-lg"></i> <!-- Adjust icon size -->
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+[
+	{
+	  "country_id": "1",
+	  "states": [
+		{ "id": "1", "name": "Maharashtra" },
+		{ "id": "2", "name": "Gujrat" }
+	  ]
+	},
+	{
+	  "country_id": "2",
+	  "states": [
+		{ "id": "3", "name": "Melbourne" },
+		{ "id": "4", "name": "Sydney" }
+	  ]
+	}
+  ]
+  

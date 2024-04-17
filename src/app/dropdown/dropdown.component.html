@@ -1,0 +1,74 @@
+<section>
+  <div class="container-fluid">
+    <div class="row" style="justify-content: center;">
+      <div class="col-lg-8 col-12">
+        <form class="boxshadoww bottomborder topborder" style="border-radius: 10px; padding: 5%;">
+          <div class="col">
+            <label for="CountryId">Country</label>
+            <input #countryInput
+            type="text"
+            placeholder="Pick one"
+            [formControl]="countryControl"
+            (input)="filterCountry(0)"
+            (focus)="filterCountry(0)">
+
+            <select name="CountryId" [(ngModel)]="userDetail.CountryId" name="CountryId" class="form-control">
+              <option *ngFor="let option of filteredCountryOptions" [title]="option.name" [value]="option.name" (click)="filterCountry(option.id)">
+                {{ option.name }}
+              </option>
+            </select>
+          </div>
+
+          <br>
+
+          <div class="col">
+            <label for="StateId">State</label>
+            <input #stateInput
+            [formControl]="stateControl"
+                          type="text"
+                          placeholder="Pick one"
+                         
+                          
+                          [formControl]="stateControl"
+                          
+                          (input)="filterState(0)"
+                          (focus)="filterState(0)">
+
+            <select name="StateId" [(ngModel)]="userDetail.StateId" name="StateId" class="form-control">
+              <option *ngFor="let option of filteredStateOptions" [title]="option.name" [value]="option.name"(ngModelChange)="filterState(option.id)">
+                {{option.name}}
+
+              </option>
+            </select>
+          </div>
+
+          <br>
+
+          <div class="col">
+            <label for="CityId">City</label>
+            <input #cityInput
+                          type="text"
+                          placeholder="Pick one"
+                          [formControl]="cityControl"
+
+                          (input)="filterCity()"
+                          (focus)="filterCity()">
+
+            <select name="CityId" [(ngModel)]="userDetail.CityId" name="CityId" class="form-control">
+              <option *ngFor="let option of filteredCityOptions" [title]="option.name" [value]="option.name" >
+                {{ option.name }}
+              </option>
+            </select>
+          </div>
+
+          <br>
+
+          <button mdbRipple (click)="OnSubmit();" type="button" class="btn btn-primary btn-block mb-4">
+            Submit
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

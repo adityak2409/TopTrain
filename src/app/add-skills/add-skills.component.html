@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>SKills Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>SKills Form</h2>
+    <form>
+
+      <!-- SKillsId
+      <div class="form-group row">
+        <label for="SKillsId" class="col-sm-2 col-form-label">SKillsId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="SKillsId" placeholder="Enter SKillsId ">
+        </div>
+      </div> -->
+
+
+       <!-- IndustryId -->
+       <div class="form-group row">
+        <label for="IndustryId" class="col-sm-2 col-form-label">IndustryId</label>
+        <div class="col-sm-10">
+          <select [(ngModel)]="skills.Industry.IndustryId"class="form-control" name="IndustryId" #IndustryId="ngModel" placeholder="Enter IndustryId Id" required>
+            <option *ngFor="let Industry of IndustryList" [value]="Industry.IndustryId">{{Industry.Title}}</option>
+          </select>
+         
+        </div>
+      </div>
+
+      <!-- Title -->
+      <div class="form-group row">
+        <label for="Title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Title" [(ngModel)]="skills.Title" #title="ngModel" name="Title"  placeholder="Enter Title">
+        </div>
+      </div>
+   
+      <br>
+      <!-- Description -->
+      <div class="form-group row">
+        <label for="Description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="Description" [(ngModel)]="skills.Description" #description="ngModel" name="Description"rows="3" placeholder="Enter Description"></textarea>
+        </div>
+      </div>
+      
+      <br>
+      <!-- CertificateStatus -->
+      <!-- <div class="form-group row">
+        <label for="CertificateStatus" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="CertificateStatus" class="form-control" id="CertificateStatus"[(ngModel)]="skills.CertificateStatus" #certificatestatus="ngModel" name="CertificateStatus" placeholder="Enter CertificateStatus">
+        </div>
+      </div> -->
+   
+      <br>
+      
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>
+ 

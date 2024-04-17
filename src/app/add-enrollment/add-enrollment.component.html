@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>Enrollment Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Enrollment Form</h2>
+    <form>
+
+      <!-- EnrollmentId
+      <div class="form-group row">
+        <label for="EnrollmentId" class="col-sm-2 col-form-label">EnrollmentId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="EnrollmentId" placeholder="Enter EnrollmentId ">
+        </div>
+      </div> -->
+
+
+       <!-- RegistrationId -->
+       <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="enrollment.RegistrationId" #registrationId="ngModel" name="RegistrationId"  placeholder="Enter RegistrationId">
+        </div>
+      </div>
+
+      <!-- CourseId -->
+      <div class="form-group row">
+        <label for="CourseId" class="col-sm-2 col-form-label">CourseId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="CourseId" [(ngModel)]="enrollment.CourseId" #courseId="ngModel" name="CourseId"  placeholder="Enter CourseId">
+        </div>
+      </div>
+   
+      <br>
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="Status" class="form-control" id="Status"[(ngModel)]="enrollment.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div> -->
+   
+      <br>
+      
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>
+ 

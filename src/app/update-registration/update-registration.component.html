@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>Registration Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Registration Form</h2>
+    <form>
+
+      <!-- RegistrationId
+      <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">Registration ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" placeholder="Enter Registration ID">
+        </div>
+      </div> -->
+
+      <!-- FName -->
+      <div class="form-group row">
+        <label for="FName" class="col-sm-2 col-form-label">FName</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="FName" [(ngModel)]="registration.FName" #fName="ngModel" name="FName"  placeholder="Enter FName">
+        </div>
+      </div>
+   
+      <br>
+      <!-- LName -->
+      <div class="form-group row">
+        <label for="LName" class="col-sm-2 col-form-label">LName</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="LName" [(ngModel)]="registration.LName" #lName="ngModel" name="LName" placeholder="Enter LName"></textarea>
+        </div>
+      </div>
+      
+      <br>
+      <!-- Email -->
+      <div class="form-group row">
+        <label for="Email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="Email" class="form-control" id="email"[(ngModel)]="registration.Email" #email="ngModel" name="Email" placeholder="Enter Email">
+        </div>
+      </div>
+   
+      <br>
+      <!-- Password -->
+      <div class="form-group row">
+        <label for="Password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="Password" [(ngModel)]="registration.Password" #password="ngModel" name="Password"  placeholder="Enter Password ">
+        </div>
+      </div>
+   
+      <br>
+
+      <!-- EmailStatus -->
+      <div class="form-group row">
+        <label for="EmailStatus" class="col-sm-2 col-form-label">EmailStatus</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="EmailStatus" [(ngModel)]="registration.EmailStatus" #emailStatus="ngModel" name="EmailStatus"  placeholder="Enter EmailStatus ">
+        </div>
+      </div>
+   
+      <br>
+      <!-- OTPNo -->
+      <div class="form-group row">
+        <label for="OTPNo" class="col-sm-2 col-form-label">OTPNo</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="OTPNo" [(ngModel)]="registration.OTPNo" #otpno="ngModel" name="OTPNo"  placeholder="Enter OTPNo ">
+        </div>
+      </div>
+   
+      <br>
+
+      <!-- Status -->
+      <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+            <input type="tel" class="form-control" id="Status" [(ngModel)]="registration.Status" #status="ngModel" name="Status"  placeholder="Enter Status">
+        </div>
+      </div>
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>

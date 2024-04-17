@@ -1,0 +1,48 @@
+// Assuming your main container has a class named "main-container"
+
+.main-container {
+    // Ensure it covers the entire page
+    width: 100vw;
+    height: 100vh;
+  
+    // Flex layout to align items vertically
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    // Style for the first section containing the "Post Job" button
+    section:first-of-type {
+      margin-bottom: auto; // Push it to the top
+  
+      .container-fluid {
+        // Align the row items horizontally
+        display: flex;
+        justify-content: flex-start;
+  
+        // Style for the "Post Job" button column
+        .col-lg-1 {
+          // Offset the column to the left
+          margin-left: 2rem; // Adjust as needed
+        }
+      }
+    }
+  
+    // Style for the second section containing the form
+    section:last-of-type {
+      margin-top: auto; // Push it to the bottom
+  
+      .container-fluid {
+        // Align the row items horizontally
+        display: flex;
+        justify-content: flex-end;
+  
+        // Style for the form column
+        .col-lg-8 {
+          // Offset the column to the right
+          margin-right: 2rem; // Adjust as needed
+        }
+      }
+    }
+  }
+  

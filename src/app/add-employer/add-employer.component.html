@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>Employer Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Employer Form</h2>
+    <form>
+
+      <!-- EmployerId
+      <div class="form-group row">
+        <label for="Employer" class="col-sm-2 col-form-label">Employer ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Employer" placeholder="Enter Employer ID">
+        </div>
+      </div> -->
+
+      <!-- RegistrationId -->
+      <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="employer.RegistrationId" #vendorId="ngModel" name="RegistrationId"  placeholder="Enter RegistrationId">
+        </div>
+      </div>
+   
+      <br>
+
+      <!-- CompanyName -->
+      <div class="form-group row">
+        <label for="CompanyName" class="col-sm-2 col-form-label">CompanyName</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="CompanyName" [(ngModel)]="employer.CompanyName" #companyName="ngModel" name="CompanyName"  placeholder="Enter CompanyName">
+        </div>
+      </div>
+   
+      <br>
+      <!-- Industry -->
+      <div class="form-group row">
+        <label for="Industry" class="col-sm-2 col-form-label">Industry</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="Industry" [(ngModel)]="employer.Industry" #industry="ngModel" name="Industry"rows="3" placeholder="Enter Industry"></textarea>
+        </div>
+      </div>
+      
+      <br>
+      <!-- Contact -->
+      <div class="form-group row">
+        <label for="Contact" class="col-sm-2 col-form-label">Contact</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="Contact" [(ngModel)]="employer.Contact" #contact="ngModel" name="Contact"  placeholder="Enter Contact Number">
+        </div>
+      </div>
+   
+      <br>
+      <!-- Email -->
+      <div class="form-group row">
+        <label for="Email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="Email" class="form-control" id="email"[(ngModel)]="employer.Email" #email="ngModel" name="Email" placeholder="Enter Email">
+        </div>
+      </div>
+      
+      <br>
+      
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+            <input type="tel" class="form-control" id="Status" [(ngModel)]="employer.Status" #status="ngModel" name="Status"  placeholder="Enter Status">
+        </div>
+      </div> -->
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>

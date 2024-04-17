@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous"> -->
+  <title>Job Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>Job Form</h2>
+    <form>
+
+      <!-- JobId
+      <div class="form-group row">
+        <label for="JobId" class="col-sm-2 col-form-label">JobId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="JobId" placeholder="Enter JobId ">
+        </div>
+      </div> -->
+
+
+       <!-- EmployerId -->
+       <div class="form-group row">
+        <label for="EmployerId" class="col-sm-2 col-form-label">EmployerId</label>
+          <div class="col-sm-10">
+            <select [(ngModel)]="job.employer.EmployerId"class="form-control" name="EmployerId" #employerId="ngModel" placeholder="Enter Employer Id" required>
+              <option *ngFor="let employer of EmployerList" [value]="employer.EmployerId">{{employer.CompanyName}}</option>
+            </select>
+        
+          </div>
+      </div>
+
+      <!-- Title -->
+      <div class="form-group row">
+        <label for="Title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Title" [(ngModel)]="job.Title" #title="ngModel" name="Title"  placeholder="Enter Title">
+        </div>
+      </div>
+   
+      <br>
+      <!-- JobType -->
+      <div class="form-group row">
+        <label for="JobType" class="col-sm-2 col-form-label">JobType</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="JobType" [(ngModel)]="job.JobType" #jobType="ngModel" name="JobType"rows="3" placeholder="Enter JobType"></textarea>
+        </div>
+      </div>
+      
+      <br>
+      <!-- Description -->
+      <div class="form-group row">
+        <label for="Description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <input type="Description" class="form-control" id="Description"[(ngModel)]="job.Description" #description="ngModel" name="LinkedIn" placeholder="Enter LinkedIn">
+        </div>
+      </div>
+   
+      <br>
+
+      <!-- Requirements -->
+      <div class="form-group row">
+        <label for="Requirements" class="col-sm-2 col-form-label">Requirements</label>
+        <div class="col-sm-10">
+          <input type="Requirements" class="form-control" id="Requirements"[(ngModel)]="job.Requirements" #Requirements="ngModel" name="Requirements" placeholder="Enter Requirements">
+        </div>
+      </div>
+   
+      <br>
+
+     
+      <!-- Location -->
+      <div class="form-group row">
+        <label for="Location" class="col-sm-2 col-form-label">Location</label>
+        <div class="col-sm-10">
+          <input type="Location" class="form-control" id="Location"[(ngModel)]="job.Location" #Location="ngModel" name="Location" placeholder="Enter Location">
+        </div>
+      </div>
+   
+      <br>
+    
+      <!-- Salary -->
+      <div class="form-group row">
+        <label for="Salary" class="col-sm-2 col-form-label">Salary</label>
+        <div class="col-sm-10">
+          <input type="Salary" class="form-control" id="Salary"[(ngModel)]="job.Salary" #Salary="ngModel" name="Salary" placeholder="Enter Salary">
+        </div>
+      </div>
+   
+      <br>
+      <br>
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="Status" class="form-control" id="Status"[(ngModel)]="job.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div> -->
+   
+      <br>
+      
+
+      <br>
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+
+</html>
+ 

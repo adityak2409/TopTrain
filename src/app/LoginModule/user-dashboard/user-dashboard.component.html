@@ -1,0 +1,370 @@
+<!-- 
+<h1>are u looking for any other role</h1>
+<div *ngFor="let role of this.unmatchedRoles">
+    <input type="checkbox" [id]="role.RoleId" [value]="role.RoleId" [(ngModel)]="role.isSelected">
+  <label [for]="role.RoleId">{{ role.Title }}</label>
+</div>
+<button (click)="getSelectedRoles()">Request for roles</button>
+
+
+
+<br>
+<br>
+
+
+<div *ngIf="this.MId > 1">
+<h1>Select Your Default Role</h1>
+<div *ngFor="let ur of this.matchedRoles">
+    <input type="radio" [id]="ur.RoleId" [value]="ur.RoleId" [(ngModel)]="ur.isSelected">
+  <label [for]="ur.RoleId">{{ ur.role.Title }}</label>
+</div>
+<button (click)="OnSubmit()">Submit</button>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-container">
+  <div class="head-rectangle">
+    <div class="top-rectangle">
+      <div class="top-train-page">
+        <img src="../assets/TopTrain_page-0001 1.png">
+      </div>
+
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="notification-icon"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+        </svg></div>
+      <div class="ellipse-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="user-setting-icon" viewBox="0 0 16 16">
+          <path
+            d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0" />
+        </svg></div>
+      <div class="user-setting-notification-no">1</div>
+      <div class="notification-no">3</div>
+
+
+      <span class="jobs">
+        <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="app-end-user-job-list">Jobs</a></p>
+      </span>
+
+      <span class="career-paths">
+        <p><a class="link-offset-2 link-underline link-underline-opacity-0"
+            href="https://example.com/Career paths">Career Paths</a></p>
+
+
+
+      </span>
+      <span class="services">
+        <p><a class="link-offset-2 link-underline link-underline-opacity-0"
+            href="https://example.com/services">Services</a></p>
+      </span>
+    </div>
+  </div>
+  <div class="profile-lastupdate-rectangle">
+
+    <div class="image-11">
+      <img src="../assets/user.jpg">
+    </div>
+    <div class="image-12"></div>
+    <span class="priti-parmar">John William</span>
+    <div class="Basic-details-edit-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+      </svg>
+    </div>
+    <span class="profile-last-updated">Profile last updated- 10 Sep,2023</span>
+    <div class="line">
+      <hr>
+    </div>
+    <div class="image-13"></div>
+    <div class="vertical-line"></div>
+
+    <span class="pune-fresher-availability">
+      <div>
+        <div class="icon-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg>
+          <span> Pune</span>
+        </div><br>
+
+        <div class="icon-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+            <path
+              d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z" />
+          </svg>
+          <span> Fresher</span>
+        </div><br>
+
+        <div class="icon-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3"
+            viewBox="0 0 16 16">
+            <path
+              d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+            <path
+              d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+          </svg>
+          <span> Add Availability To Join</span>
+        </div>
+      </div>
+
+
+    </span>
+
+
+
+    <span class="example-email">
+      <div>
+        <div class="icon-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+          </svg>
+          <span> 9999999999</span>
+        </div><br>
+
+        <div class="icon-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+          </svg>
+          <span> example.@gmail.com</span>
+        </div>
+
+
+
+      </div>
+    </span>
+
+
+    <!-- <span class="verify">
+      <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Verify</a></p>
+    </span> -->
+
+  </div>
+
+
+  <!-- Quick-link , resume , resume heading , key skills , employee & education rectangle include in below class -->
+  <div class="flex-row-f">
+    
+    <div class="Resume">
+      <span class="resume-1f">Resume</span>
+      
+        <div class="flex-row">
+<div class="box"></div>
+          <div class="upload-resume">
+            <!-- <button>Register</button> -->
+            <p><a href="add-cv" class="btn btn-primary">Upload Resume</a></p>
+          </div>
+
+
+     
+        <span class="supported-formats">Supported Formats: doc, docx, rtf, pdf, upto 2 MB</span>
+     </div> 
+     
+      <div class="rectangle-22">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="icon-Don’t-have-resume-yet" viewBox="0 0 16 16">
+          <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+          <path
+            d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z" />
+        </svg>
+        <div class="no-resume">
+          <span class="no-resume-24">Don’t have a resume yet?</span><span class="br"> <br /><br /></span>
+        </div>
+
+        <span class="create-resume">
+          <p><a class="link" href="#">Create free resume</a></p>
+        </span>
+      </div>
+    </div>
+    <span class="important-info">Resume is the most important document recruiters look for. Recruiters
+      generally do not look at profiles without resumes. </span>
+    
+   
+
+    <span class="resume-builder">Create a job-winning resume with our simple resume builder</span>
+    <div class="resume-heading">
+      <span class="looking-for-jobs">Looking for jobs requiring following skills: CSS</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Resume-headline-icon"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+      </svg>
+      <span class="resume-headline">Resume headline</span>
+    </div>
+    <!-- <div class="key-skills-rect">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="key-skills-icon"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+      </svg>
+      <span class="key-skills">Key skills</span>
+      <div class="rectangle-29"></div>
+      <span class="css">CSS</span>
+    </div> -->
+    <div class="employee-rect ">
+      <span class="employment">Employment</span>
+      <span class="add-employment">
+        <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="add-employer">Add Employment</a></p>
+      </span>
+
+
+
+
+    </div>
+    <span class="mention-employment-details">Mention your employment details including your current and previous
+      company work experience.</span>
+    <div class="Education-rect">
+      <span class="add-education">
+        <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="app-add-user-education">Add Education</a></p>
+      </span>
+    </div>
+    <div class="education-below-class-x">
+      <span class="education">Education<br /><br /></span><span class="br-2c"><br /></span><span
+        class="below-class-x">Below class X<br /></span><span class="br-2d"><br /><br /></span><span
+        class="add-education-details">Add doctorate/PhD<br /><br />Add masters/post-graduation<br /><br />Add
+        graduation/diploma<br /><br />Add class XII<br /><br />Add class
+        X</span>
+    </div>
+  </div>
+  <div class="flex-row-f-2e">
+    <div class="rectangle-2f">
+
+      <span class="add-details">
+        <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="app-add-user-skill">Add Details</a></p>
+      </span>
+    </div>
+    <div class="it-skills">
+      <span class="it-skills-30">Skils</span><span class="space"> </span><span class="space-31"> </span><span
+        class="add-10-percent">Add 10%</span><span class="space-32"> </span><span class="space-33"> </span><span
+        class="space-34">
+        <br />
+        <br /></span><span class="specify-details-about-programming-languages">Specify details about programming
+        languages (such as Java, Python,
+        C/C++, Oracle, SQL etc), softwares (Microsoft Word, Excel, Tally
+        etc) or any other software related knowledge. <br /></span>
+    </div>
+  </div>
+  
+  <div class="rectangle-39">
+    <div class="profile-summary">
+      <span class="profile-summary-3a">Profile summary </span><span class="br-br">
+        <br />
+        <br /></span><span class="profile-summary-guidelines">Your Profile Summary should mention the highlights of your
+        career
+        and education, what your professional interests are, and what kind
+        of a career you are looking for. Write a meaningful summary of more
+        than 50 characters.</span>
+    </div>
+
+    <span class="add-profile-summary">
+      <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add Profile Summary</a></p>
+    </span>
+
+
+  </div>
+  <div class="flex-row-aea">
+    <div class="rectangle-3b">
+      <div class="flex-column-cc">
+        <div class="accomplishments">
+          <span class="accomplishments-3c">Accomplishments</span><span class="space-3d"> </span>
+        </div>
+        <div class="white-paper-research-publication-journal-entry">
+          <span class="white-paper-research-publication-journal-entry-3e">White paper / Research publication / Journal
+            entry <br /></span><span class="add-links-online-publications">Add links to your online publications.</span>
+        </div>
+        <div class="line-3f"></div>
+        <div class="patent-details">
+          <span class="patent">Patent <br /></span><span class="add-patent-details">Add details of patents you have
+            filed.</span>
+        </div>
+        <div class="line-40"></div>
+        <div class="online-profile-link">
+          <span class="online-profile">Online profile <br /></span><span class="add-online-profile-link">Add link to
+            online profiles (e.g. Linkedin, Facebook
+            etc.).</span>
+        </div>
+        <div class="line-41"></div>
+        <div class="work-sample-link">
+          <span class="work-sample">Work sample <br /></span><span class="add-work-sample-link">Add link to your
+            projects (e.g. Github links etc.).</span>
+        </div>
+        <div class="line-42"></div>
+        <div class="presentation-links">
+          <span class="presentation">Presentation</span><span class="presentation-line-break"> <br /></span><span
+            class="add-presentation-links">Add links to your online presentations (e.g. Slideshare
+            presentation links etc.). <br /></span>
+        </div>
+        <div class="line-43"></div>
+      </div>
+      <div class="flex-column-adf">
+
+        <span class="add-44">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+        </span>
+
+        <span class="add-45">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+        </span>
+
+        <span class="add-46">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+        </span>
+
+        <span class="add-47">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+        </span>
+
+        <span class="add-48">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+        </span>
+
+        <span class="add-49">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+        </span>
+      </div>
+    </div>
+
+    <span class="add-49">
+      <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Add</a></p>
+    </span>
+
+    <div class="certification-details">
+      <span class="certification">Certification <br /></span><span class="add-certification-details">Add details of
+        certifications you have achieved/completed</span>
+    </div>
+  </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyLdy6WvATKFIddjauEMUAHzI/6vpW6L" crossorigin="anonymous">
+  <title>UserEducation Form</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2>UserEducation Form</h2>
+    <form>
+
+      <!-- UserEducationId -->
+      <!-- <div class="form-group row">
+        <label for="UserEducationId" class="col-sm-2 col-form-label">UserEducationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="UserEducationId" [(ngModel)]="userEducation.UserEducationId" #userEducationId="ngModel" name="UserEducationId" placeholder="Enter UserEducationId">
+        </div>
+      </div>
+
+      <br> -->
+
+      <!-- RegistrationId -->
+      <div class="form-group row">
+        <label for="RegistrationId" class="col-sm-2 col-form-label">RegistrationId</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="RegistrationId" [(ngModel)]="userEducation.RegistrationId" #registrationId="ngModel" name="RegistrationId" placeholder="Enter RegistrationId">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Title -->
+      <div class="form-group row">
+        <label for="Title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Title" [(ngModel)]="userEducation.Title" #title="ngModel" name="Title" placeholder="Enter Title">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Description -->
+      <div class="form-group row">
+        <label for="Description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Description" [(ngModel)]="userEducation.Description" #description="ngModel" name="Description" placeholder="Enter Description">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- University -->
+      <div class="form-group row">
+        <label for="University" class="col-sm-2 col-form-label">University</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="University" [(ngModel)]="userEducation.University" #university="ngModel" name="University" placeholder="Enter University">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- College -->
+      <div class="form-group row">
+        <label for="College" class="col-sm-2 col-form-label">College</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="College" [(ngModel)]="userEducation.College" #college="ngModel" name="College" placeholder="Enter College">
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Status -->
+      <!-- <div class="form-group row">
+        <label for="Status" class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Status" [(ngModel)]="userEducation.Status" #status="ngModel" name="Status" placeholder="Enter Status">
+        </div>
+      </div>
+
+      <br> -->
+
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" (click)="OnSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>
